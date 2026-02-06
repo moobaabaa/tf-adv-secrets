@@ -2,6 +2,7 @@ provider "aws" {
   region = "us-west-2"
 }
 
+#updated and validate secrets
 data "aws_secretsmanager_secret_version" "api" {
   secret_id = "dev/app/user04"
 }
